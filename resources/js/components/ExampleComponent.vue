@@ -17,7 +17,7 @@
 <script>
     export default {
         mounted() {
-            console.log('Component mounted.')
+        	axios.get('/lara_vue_db/public/api/userlist').then(response => console.log(response))
         }
     }
 </script>
